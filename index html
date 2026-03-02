@@ -1,10 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>我的第一个网页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>月田意意的全能导航站</title>
+    <style>
+        body { font-family: "Microsoft YaHei", sans-serif; background: #f0f2f5; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 1000px; margin: auto; }
+        h1 { text-align: center; color: #1a73e8; margin-bottom: 30px; }
+        
+        /* 分类区块样式 */
+        .category { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .category h2 { border-left: 5px solid #1a73e8; padding-left: 15px; margin-top: 0; font-size: 1.25rem; color: #1a73e8; }
+        
+        /* 链接网格布局 */
+        .links { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin-top: 15px; }
+        .links a { 
+            text-decoration: none; 
+            color: #444; 
+            background: #fff; 
+            padding: 12px 8px; 
+            border-radius: 8px; 
+            text-align: center; 
+            transition: all 0.2s ease; 
+            border: 1px solid #e0e0e0;
+            font-size: 0.95rem;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        /* 鼠标悬停效果 */
+        .links a:hover { 
+            background: #1a73e8; 
+            color: #fff; 
+            border-color: #1a73e8; 
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(26,115,232,0.3);
+        }
+
+        /* 手机端适配 */
+        @media (max-width: 600px) {
+            .links { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+        }
+    </style>
 </head>
 <body>
-    <h1>你好，GitHub！</h1>
-    <p>这是我亲手搭建的第一个网站。</p>
+    <div class="container">
+        <h1>🎬 月田意意视频导航</h1>
+
+        <div class="category">
+            <h2>综合长视频平台 (国内)</h2>
+            <div class="links">
+                <a href="https://www.iqiyi.com" target="_blank">爱奇艺</a>
+                <a href="https://v.qq.com" target="_blank">腾讯视频</a>
+                <a href="https://www.youku.com" target="_blank">优酷视频</a>
+                <a href="https://www.mgtv.com" target="_blank">芒果 TV</a>
+                <a href="https://www.bilibili.com" target="_blank">哔哩哔哩 (B站)</a>
+                <a href="https://www.acfun.cn" target="_blank">AcFun (A站)</a>
+                <a href="https://tv.sohu.com" target="_blank">搜狐视频</a>
+                <a href="https://www.miguvideo.com" target="_blank">咪咕视频</a>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>短视频 / 中视频</h2>
+            <div class="links">
+                <a href="https://www.douyin.com" target="_blank">抖音</a>
+                <a href="https://www.kuaishou.com" target="_blank">快手</a>
+                <a href="https://www.ixigua.com" target="_blank">西瓜视频</a>
+                <a href="https://haokan.baidu.com" target="_blank">好看视频</a>
+                <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>影视 / 官方媒体</h2>
+            <div class="links">
+                <a href="https://tv.cctv.com" target="_blank">央视网</a>
+                <a href="https://www.1905.com" target="_blank">1905 电影网</a>
+                <a href="https://www.yangshipin.cn" target="_blank">央视频</a>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>国际综合视频 / 流媒体</h2>
+            <div class="links">
+                <a href="https://www.youtube.com" target="_blank">YouTube</a>
+                <a href="https://www.netflix.com" target="_blank">Netflix</a>
+                <a href="https://www.disneyplus.com" target="_blank">Disney+</a>
+                <a href="https://www.primevideo.com" target="_blank">Amazon Prime</a>
+                <a href="https://www.hulu.com" target="_blank">Hulu</a>
+                <a href="https://www.max.com" target="_blank">Max (HBO)</a>
+                <a href="https://www.dailymotion.com" target="_blank">Dailymotion</a>
+                <a href="https://www.vimeo.com" target="_blank">Vimeo</a>
+                <a href="https://www.twitch.tv" target="_blank">Twitch</a>
+                <a href="https://www.facebook.com/watch" target="_blank">Facebook Watch</a>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>垂直 / 特色平台</h2>
+            <div class="links">
+                <a href="https://www.vevo.com" target="_blank">Vevo (音乐)</a>
+                <a href="https://www.ted.com/talks" target="_blank">TED Talks (演讲)</a>
+                <a href="https://www.tubi.tv" target="_blank">Tubi (免费影视)</a>
+                <a href="https://www.crackle.com" target="_blank">Crackle (索尼)</a>
+                <a href="https://www.bbc.co.uk/iplayer" target="_blank">BBC iPlayer</a>
+                <a href="https://rutube.ru" target="_blank">RuTube (俄罗斯)</a>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
